@@ -1,0 +1,81 @@
+.section4 {
+    display: flex;
+    margin-bottom: 209px;
+}
+
+.section4 > .imgBlock {
+    width: 624px;
+    height: 354px;
+    margin: 26px 122px 0 50px;
+    position: relative;
+}
+
+.section4 > .imgBlock > img {
+    width: 624px;
+    height: 354px;
+    top: 0%;
+    left: 0%;
+}
+
+.section4 > .rightBlock {
+    text-align: left;
+}
+
+.section4 > .rightBlock > h2 {
+    width: 290px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 39px;
+}
+
+.section4 > .rightBlock > .controls {
+    display: flex;
+    margin-bottom: 121px;
+}
+
+.section4 > .rightBlock > .controls > input {
+    display: none;
+}
+
+.section4 > .rightBlock > .controls > label {
+    margin-right: 24px;
+    width: 128px;
+    line-height: 48px;
+    border-radius: 6px;
+    border: solid 1px rgba(144, 149, 153, 0.35);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #787c80;
+}
+
+.section4 > .rightBlock > .controls > input:checked + label {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px rgba(33, 39, 46, 0.15);
+    font-size: 13px;
+    color: #f43939;
+}
+
+.section4 > .rightBlock > h4 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    margin: 0 0 8px;
+}
+
+.section4 > .rightBlock > p {
+    width: 398px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #787c80;
+    margin: 0;
+}
+
+.section4 > .rightBlock .disabled {
+    display: none;
+}

@@ -1,0 +1,145 @@
+.section3 {
+    display: flex;
+    margin-bottom: 228px;
+}
+
+.section3 > .leftBlock {
+    width: 533px;
+    height: 592px;
+}
+
+.section3 > .leftBlock > .textBlock {
+    position: relative;
+    overflow: hidden;
+    height: 294px;
+    margin: 143px 75px 0 77px;
+    padding: 0;
+    text-align: left;
+}
+
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock > h2 {
+    margin: 0;
+    width: 290px;
+    height: 88px;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+    color: #21272e;
+}
+
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock > p {
+    width: 381px;
+    height: 90px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #787c80;
+}
+
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock.active {
+    opacity: 1;
+    -webkit-animation: slide 0.4s 1;
+}
+
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock:not(.active) {
+    -webkit-animation: hidden 0.4s 1;
+    opacity: 0;
+}
+
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hidden {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.section3 > .leftBlock > .controls {
+    display: flex;
+    align-items: center;
+    margin-left: 84px;
+}
+
+.section3 > .leftBlock > .controls label {
+    display: inline-flex;
+}
+
+.section3 > .leftBlock > .controls input {
+    display: none;
+}
+
+.section3 > .leftBlock > .controls svg {
+    width: 6px;
+    height: 6px;
+    margin: 0 12px;
+}
+
+.section3 > .leftBlock > .controls input:not(:checked) + label {
+    opacity: 0.15;
+}
+
+.section3 > .leftBlock > .controls input:checked + label {
+    opacity: 1;
+}
+
+.section3 > .leftBlock > .controls > button {
+    outline: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-image: url("arrow.svg");
+}
+
+.section3 > .leftBlock > .controls > button:first-of-type {
+    margin-right: 24px;
+    transform: scale(-1);
+}
+
+.section3 > .leftBlock > .controls > button:last-of-type {
+    margin-left: 24px;
+}
+
+.section3 > .leftBlock > .controls > button:disabled {
+    opacity: 0.25;
+}
+
+.section3 > .imgBlock {
+    width: 747px;
+    height: 592px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section3 > .imgBlock > img {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.section3 > .imgBlock > img.active {
+    opacity: 1;
+}

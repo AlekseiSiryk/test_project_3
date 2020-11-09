@@ -1,0 +1,181 @@
+.section7 {
+    text-align: left;
+    display: flex;
+}
+
+.section7 > .leftBlock {
+    padding-top: 224px;
+    width: 724px;
+    background-image: url("noise.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -120px 135px;
+    padding-bottom: 94px;
+}
+
+.section7 > .rightBlock {
+    width: 556px;
+}
+
+.section7 > .leftBlock > h3 {
+    text-transform: uppercase;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #f43939;
+    margin: 0 0 16px 76px;
+}
+
+.section7 > .leftBlock > h1 {
+    width: 494px;
+    line-height: 56px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 81px 76px;
+}
+
+.section7 > .leftBlock > .arrow2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 134px;
+    height: 43px;
+    background-image: url("arrow2.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 0 0 26px 24px;
+}
+
+.section7 .arrow2 > span {
+    width: 105px;
+    line-height: 25px;
+    margin: auto 29px 0 0;
+    opacity: 0.9;
+    font-family: HandOfSeanPro;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.section7 > .leftBlock > .countries {
+    width: 288px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 24px;
+    margin-left: 76px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+}
+
+.section7 > .leftBlock > .countries .flag {
+    margin-right: 8px;
+}
+
+.section7 > .leftBlock > .countries .country {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.36;
+}
+
+.section7 > .leftBlock > .countries .country:nth-of-type(1n + 3) {
+    margin-top: 11px;
+}
+
+.section7 > .rightBlock {
+    padding-top: 145px;
+}
+
+.section7 .arrow1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 257px;
+    height: 52px;
+    background-image: url("arrow1.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+}
+
+.section7 .arrow1 > span {
+    width: 214px;
+    line-height: 20px;
+    margin: auto 0 0 37px;
+    opacity: 0.9;
+    font-family: HandOfSeanPro;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.section7 > .rightBlock > form {
+    width: 407px;
+    height: 461px;
+    padding: 32px 0 0 32px;
+    border-radius: 13px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+}
+
+.section7 > .rightBlock > form > h3 {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 49px;
+}
+
+.section7 > .rightBlock > form > input:not([type=submit]) {
+    width: 343px;
+    height: 56px;
+    border-radius: 10px;
+    border: solid 1px rgba(144, 149, 153, 0.35);
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.36;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.section7 > .rightBlock > form > input::placeholder {
+    color: #b4babf;
+}
+
+.section7 > .rightBlock > form > input:nth-of-type(3) {
+    width: 96px;
+    margin-right: 16px;
+}
+
+.section7 > .rightBlock > form > input:nth-of-type(4) {
+    width: 231px;
+    background: url("phone.svg") no-repeat calc(100% - 16px) center;
+    margin-bottom: 39px;
+}
+
+.section7 > .rightBlock > form > input[type=submit] {
+    width: 172px;
+    height: 52px;
+    border-radius: 8px;
+    background-image: linear-gradient(107deg, #ff474d, #fa4353);
+    font-family: Manrope3;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.section7 > .rightBlock > form > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #909599;
+    margin-left: 77.5px;
+}
+
+
+
+
+
+
+
+
+
+

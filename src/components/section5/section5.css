@@ -1,0 +1,99 @@
+.section5 {
+    margin-bottom: 210px;
+}
+
+.section5 > .textBlock {
+    display: flex;
+    text-align: left;
+}
+
+.section5 > .textBlock > h2 {
+    margin: 0 126px;
+    width: 441px;
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section5 > .textBlock > span {
+    margin: 13px 30px 78px 0;
+    height: 90px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #787c80;
+}
+
+.section5 > .imgBlock {
+    margin: 0 125px;
+    display: flex;
+}
+
+.section5 > .imgBlock > div {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 316px;
+    height: 552px;
+    border-radius: 52px;
+    background-color: #e1eff0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.section5 > .imgBlock > div > img {
+    position: absolute;
+}
+
+.section5 > .imgBlock > div:nth-of-type(1) > img {
+    width: 308px;
+    height: 495px;
+    top: 37px;
+    left: -42px;
+}
+
+.section5 > .imgBlock > div:nth-of-type(2) > img {
+    width: 309px;
+    height: 497px;
+    top: 36px;
+    left: -38px;
+}
+
+.section5 > .imgBlock > div:nth-of-type(3) > img {
+    width: 309px;
+    height: 497px;
+    top: 36px;
+    left: -35px;
+}
+
+.section5 > .imgBlock > div:nth-of-type(2) {
+    margin-left: 41px;
+}
+
+.section5 > .imgBlock > div:nth-of-type(3) {
+    margin-left: 41px;
+}
+
+.section5 > .imgBlock > div > span {
+    margin: auto 0 31px 109px;
+    opacity: 0.4;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 24px;
+    background-image: url("arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.section5 > .imgBlock > div:nth-of-type(2) > span {
+    line-height: 2.14;
+    margin-bottom: 26px;
+    margin-left: 111px;
+}
+
+.section5 > .imgBlock > div:nth-of-type(3) > span {
+    line-height: 2.14;
+    margin-bottom: 26px;
+    margin-left: 113px;
+    background-image: url("checkmark.svg");
+}

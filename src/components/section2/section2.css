@@ -1,0 +1,37 @@
+.section2 {
+    margin-bottom: 108px;
+}
+
+.section2 > h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #21272e;
+}
+
+.section2 > .logoBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 152px 0 168px;
+}
+
+.section2 > .logoBar > img.goCheken {
+    height: 98px;
+}
+
+.section2 > .logoBar > img.jolliebean {
+    width: 115px;
+}
+
+.section2 > .logoBar > img.bens {
+    height: 76px;
+}
+
+.section2 > .logoBar > img.simplyWrapps {
+    height: 130px;
+}
+
+.section2 > .logoBar > img.italian {
+    width: 130px;
+}

@@ -1,0 +1,68 @@
+.section6 {
+    margin-bottom: 91px;
+}
+
+.section6 > h4 {
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #f43939;
+    margin: 0 0 16px;
+}
+
+.section6 > h2 {
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #21272e;
+    margin: 0 0 87px;
+}
+
+.section6 > .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 94px;
+}
+
+.section6 > .row > div {
+    width: 308px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section6 > .row img {
+    margin-bottom: 32px;
+}
+
+.section6 > .row h3 {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 9px;
+}
+
+.section6 > .row p {
+    width: 308px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #787c80;
+    line-height: 19px;
+    margin: 0 auto;
+}
+
+.section6 > .row > div:nth-of-type(2) p {
+    width: 200px;
+}
+
+.section6 > .row > div:nth-of-type(3) p {
+    width: 160px;
+}
+
+
+
+
+
+
+
