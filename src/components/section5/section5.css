@@ -8,7 +8,7 @@
 }
 
 .section5 > .textBlock > h2 {
-    margin: 0 126px;
+    margin: 0 156px 0 126px;
     width: 441px;
     line-height: 44px;
     font-size: 32px;
@@ -16,7 +16,7 @@
 }
 
 .section5 > .textBlock > span {
-    margin: 13px 30px 78px 0;
+    margin: 13px 0 78px 0;
     height: 90px;
     font-size: 18px;
     font-weight: 600;
@@ -31,7 +31,7 @@
 
 .section5 > .imgBlock > div {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-basis: 316px;
     height: 552px;
     border-radius: 52px;
@@ -74,11 +74,12 @@
 }
 
 .section5 > .imgBlock > div > span {
-    margin: auto 0 31px 109px;
+    margin: auto auto 31px;
     opacity: 0.4;
     font-size: 14px;
     font-weight: 600;
     padding-right: 24px;
+    padding-left: 24px;
     background-image: url("arrow.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -88,12 +89,211 @@
 .section5 > .imgBlock > div:nth-of-type(2) > span {
     line-height: 2.14;
     margin-bottom: 26px;
-    margin-left: 111px;
 }
 
 .section5 > .imgBlock > div:nth-of-type(3) > span {
     line-height: 2.14;
     margin-bottom: 26px;
-    margin-left: 113px;
     background-image: url("checkmark.svg");
+}
+
+
+@media (max-width: 1280px) {
+    .section5 {
+        margin-bottom: 193.5px;
+    }
+
+    .section5 > .textBlock > h2 {
+        margin: 0 45px 0 69px;
+    }
+
+    .section5 > .imgBlock {
+        margin: 0 68px;
+    }
+
+    .section5 > .imgBlock > div {
+        flex-basis: 265px;
+        height: 464px;
+        border-radius: 46.8px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) > img {
+        width: 248px;
+        height: 401px;
+        top: 32px;
+        left: -27px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) > img {
+        width: 249px;
+        height: 402px;
+        top: 31px;
+        left: -31px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > img {
+        width: 249px;
+        height: 402px;
+        top: 31px;
+        left: -30px;
+    }
+
+    .section5 > .imgBlock > div > span {
+        margin: auto auto 24px;
+        line-height: 2.14;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) {
+        margin-left: 47px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) {
+        margin-left: 46px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section5 {
+        margin-bottom: 208px;
+    }
+
+    .section5 > .textBlock {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section5 > .textBlock > h2 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .section5 > .textBlock > span {
+        margin: 24px 0 101px;
+    }
+
+    .section5 > .imgBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section5 > .imgBlock > div {
+        flex-basis: 718px;
+        width: 411px;
+        border-radius: 67.6px;
+        background-color: #e1eff0;
+        margin: 0 0 96px 48px;
+        position: relative;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) > img {
+        width: 398px;
+        height: 643px;
+        top: 48px;
+        left: -48px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) > img {
+        width: 400px;
+        height: 646px;
+        top: 47px;
+        left: -58px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > img {
+        width: 400px;
+        height: 646px;
+        top: 47px;
+        left: -62px;
+    }
+
+    .section5 > .imgBlock > div:not(:nth-of-type(3)) > span {
+        background-image: url("arrow_down.svg");
+    }
+
+    .section5 > .imgBlock > div > span {
+        font-size: 18.2px;
+        margin: auto auto 13px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 18px;
+        background-position: center bottom;
+    }
+}
+
+@media (max-width: 768px) {
+    .section5 {
+        margin-bottom: 122px;
+    }
+
+    .section5 > .textBlock > h2 {
+        font-size: 28px;
+        line-height: 39px;
+    }
+
+    .section5 > .textBlock > span {
+        margin: 24px 0 60px;
+        width: 100%;
+        height: 120px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.67;
+    }
+
+    .section5 > .textBlock > span > br {
+        display: none;
+    }
+
+    .section5 > .imgBlock > div {
+        flex-basis: 464px;
+        width: 265px;
+        border-radius: 46.8px;
+        margin: 0 0 48px 48px;
+        position: relative;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) {
+        margin-left: 47px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) {
+        margin-left: 48px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) {
+        margin-left: 48px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) > img {
+        width: 249px;
+        height: 402px;
+        top: 31px;
+        left: -26px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) > img {
+        width: 249px;
+        height: 402px;
+        top: 31px;
+        left: -29px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > img {
+        width: 248px;
+        height: 401px;
+        top: 32px;
+        left: -25px;
+    }
+
+    .section5 > .imgBlock > div > span {
+        font-size: 14px;
+    }
+
+    .section5 > .imgBlock > div:not(:nth-of-type(3)) > span {
+        margin-bottom: 6px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > span {
+        margin-bottom: 7px;
+    }
 }

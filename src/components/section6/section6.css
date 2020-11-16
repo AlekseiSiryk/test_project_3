@@ -1,5 +1,5 @@
 .section6 {
-    margin-bottom: 91px;
+    margin-bottom: 90px;
 }
 
 .section6 > h4 {
@@ -25,11 +25,34 @@
     padding: 0 94px;
 }
 
+.section6 > .row::before {
+    margin: auto;
+    content: "";
+    width: 727px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    opacity: .1;
+    background-color: #21272e;
+    position: absolute;
+    transform: translateY(26px);
+    z-index: -2;
+}
+
 .section6 > .row > div {
     width: 308px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.section6 > .row > div::before {
+    content: "";
+    width: 121px;
+    height: 56px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
 }
 
 .section6 > .row img {
@@ -40,7 +63,7 @@
     line-height: 25px;
     font-size: 18px;
     font-weight: bold;
-    margin: 0 0 9px;
+    margin: 0 0 8px;
 }
 
 .section6 > .row p {
@@ -60,9 +83,108 @@
     width: 160px;
 }
 
+@media (max-width: 1280px) {
+    .section6 {
+        margin-bottom: 113px;
+    }
 
+    .section6 > .row {
+        padding: 0 30px;
+    }
+}
 
+@media (max-width: 1024px) {
+    .section6 {
+        margin-bottom: 207px;
+    }
 
+    .section6 > h2 {
+        margin: 0 0 79px;
+    }
+
+    .section6 > .row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .section6 > .row::before {
+        width: 2px;
+        height: 404px;
+        transform: translateY(105px);
+        margin: 0;
+        left: auto;
+        right: auto;
+    }
+
+    .section6 > .row > div {
+        background-color: white;
+    }
+
+    .section6 > .row > div::before {
+        content: "";
+        width: 57px;
+        height: 24px;
+        transform: translateY(-24px);
+        z-index: -1;
+    }
+
+    .section6 > .row > div p::before {
+        content: "";
+        width: 100%;
+        height: 24px;
+        transform: translateY(19px);
+        background-color: white;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .section6 > .row img {
+        margin-bottom: 16px;
+    }
+
+    .section6 > .row > div:nth-of-type(1) {
+        margin-bottom: 104px;
+    }
+
+    .section6 > .row > div:nth-of-type(2) {
+        margin-bottom: 85px;
+    }
+
+    .section6 > .row > div:nth-of-type(3) p {
+        width: 331px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section6 {
+        margin-bottom: 150px;
+    }
+
+    .section6 > h2 {
+        line-height: 39px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #21272e;
+        margin: 0 0 61px;
+    }
+
+    .section6 > .row > div p {
+        position: relative;
+    }
+
+    .section6 > .row > div p::before {
+        content: "";
+        width: 100%;
+        height: calc(100% + 24px);
+        transform: translateY(0);
+        z-index: -1;
+    }
+
+    .section6 > .row > div:nth-of-type(2) {
+        margin-bottom: 104px;
+    }
+}
 
 
 

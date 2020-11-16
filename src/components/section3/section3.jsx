@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './section3.css';
 import orders from './Orders.jpg';
 import operationalCosts from './Operational Costs.png';
@@ -24,7 +24,7 @@ const Section3 = () => {
               <h2>All your orders in one place</h2>
               <p>
                 Say no more to chunky emails and messy WhatsApp messages.
-                Receive and manage your orders in one platform
+                Receive and <span> manage your orders </span> in one platform
               </p>
             </div>
             <div className={'CarouselTextBlock' +

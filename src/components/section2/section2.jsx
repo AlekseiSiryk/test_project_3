@@ -1,10 +1,10 @@
 import React from 'react';
 import './section2.css';
 import goCheken from './logo/GoCheken.png';
-import jolliebean from './logo/Jolliebean.svg';
-import bens from './logo/Bens.svg';
-import simplyWrapps from './logo/SimplyWrapps.png';
-import italian from './logo/Italian.png';
+import jolliebean from './logo/Jolliebean.png';
+import bens from './logo/Bens.png';
+import simplyWrapps from './logo/SimplyWrapps.jpg';
+import italian from './logo/Italian.jpg';
 
 const Section2 = () => {
   return (

@@ -13,11 +13,17 @@ const Country = ({ct, country}) => {
 const Section7 = () => {
   return (
       <section className="section7">
+        <h3> let’s do this </h3>
+        <h1>
+          Fill up the form and we’ll get in touch within a few hours
+        </h1>
         <div className="leftBlock">
           <h3>let’s do this</h3>
           <h1>
-            Fill up the form and we’ll get in touch within<br/>
-            a few hours
+            <span
+                className="span2">Fill up the form and we’ll get in </span> touch
+            within
+            <span className="span1"> a few hours</span>
           </h1>
           <div className="arrow2">
             <span>Or meet us in</span>

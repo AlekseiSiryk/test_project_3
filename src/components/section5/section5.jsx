@@ -13,7 +13,7 @@ const Section5 = () => {
                 Increase your sales by 30% with a better checkout <br/>
                 experience. Your customers can place orders <br/>
                 easily with a few taps on the item list
-              </span>
+          </span>
         </div>
         <div className="imgBlock">
           <div>

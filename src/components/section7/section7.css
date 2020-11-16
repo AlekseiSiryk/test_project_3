@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.section7 > h1, .section7 > h3 {
+    display: none;
+}
+
 .section7 > .leftBlock {
     padding-top: 224px;
     width: 724px;
@@ -10,11 +14,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: -120px 135px;
-    padding-bottom: 94px;
-}
-
-.section7 > .rightBlock {
-    width: 556px;
+    padding-bottom: 91px;
 }
 
 .section7 > .leftBlock > h3 {
@@ -35,6 +35,10 @@
     margin: 0 0 81px 76px;
 }
 
+.section7 > .leftBlock > h1 > .span1 {
+    white-space: nowrap;
+}
+
 .section7 > .leftBlock > .arrow2 {
     display: flex;
     justify-content: flex-start;
@@ -43,7 +47,8 @@
     background-image: url("arrow2.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    margin: 0 0 26px 24px;
+    margin: 0 0 26px 22px;
+    white-space: nowrap;
 }
 
 .section7 .arrow2 > span {
@@ -52,14 +57,15 @@
     margin: auto 29px 0 0;
     opacity: 0.9;
     font-family: HandOfSeanPro;
-    font-size: 16px;
+    font-size: 18px;
     white-space: nowrap;
 }
 
 .section7 > .leftBlock > .countries {
     width: 288px;
+    height: 150px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 10fr 7fr;
     padding: 20px 24px;
     margin-left: 76px;
     box-sizing: border-box;
@@ -76,14 +82,18 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.36;
+    display: flex;
+    align-items: center;
 }
 
-.section7 > .leftBlock > .countries .country:nth-of-type(1n + 3) {
+.section7 > .leftBlock > .countries > .country:nth-of-type(1n + 3) {
     margin-top: 11px;
+    white-space: nowrap;
 }
 
 .section7 > .rightBlock {
     padding-top: 145px;
+    width: 556px;
 }
 
 .section7 .arrow1 {
@@ -94,6 +104,8 @@
     background-image: url("arrow1.jpg");
     background-repeat: no-repeat;
     margin-bottom: 35px;
+    margin-left: 30px;
+    white-space: nowrap;
 }
 
 .section7 .arrow1 > span {
@@ -102,11 +114,13 @@
     margin: auto 0 0 37px;
     opacity: 0.9;
     font-family: HandOfSeanPro;
-    font-size: 16px;
+    font-size: 18px;
     white-space: nowrap;
 }
 
 .section7 > .rightBlock > form {
+    box-sizing: border-box;
+    background-color: white;
     width: 407px;
     height: 461px;
     padding: 32px 0 0 32px;
@@ -156,7 +170,6 @@
     background-image: linear-gradient(107deg, #ff474d, #fa4353);
     font-family: Manrope3;
     font-size: 15px;
-    font-weight: 500;
     line-height: 1.33;
     color: white;
     border: none;
@@ -167,12 +180,178 @@
     font-size: 12px;
     font-weight: 500;
     color: #909599;
-    margin-left: 77.5px;
+    margin-left: 34px;
+    white-space: nowrap;
 }
 
 
+@media (max-width: 1280px) {
+    .section7 > .leftBlock {
+        width: 573px;
+        background-position: -100px 160px;
+        background-size: 123% auto;
+        padding-bottom: 186px;
+    }
+
+    .section7 > .leftBlock > h1 {
+        width: 399px;
+        margin-bottom: 62px;
+        margin-left: 45px;
+    }
+
+    .section7 > .leftBlock > h1 {
+        margin-left: 45px;
+    }
+
+    .section7 > .leftBlock > .countries {
+        margin-left: 45px;
+    }
+
+    .section7 > .rightBlock {
+        padding-top: 145px;
+        width: 407px;
+    }
+
+    .section7 > .rightBlock .arrow1 {
+        margin-bottom: 139px;
+    }
+}
 
 
+@media (max-width: 1024px) {
+    .section7 {
+        background-image: url("noise.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: -160px -60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section7 > .leftBlock {
+        padding-top: 0;
+        padding-bottom: 81px;
+        order: 1;
+        width: 100%;
+        background-image: none;
+    }
+
+    .section7 > .leftBlock > .arrow2 {
+        margin-left: 320px;
+        margin-right: auto;
+        margin-top: 1px;
+    }
+
+    .section7 > .leftBlock > .countries {
+        margin-left: 254px;
+        margin-right: auto;
+    }
+
+    .section7 > h1 {
+        display: block;
+        text-align: center;
+        width: 506px;
+        font-size: 32px;
+        margin: 0 0 65px;
+        font-weight: bold;
+        line-height: 44px;
+        letter-spacing: normal;
+    }
+
+    .section7 > h3 {
+        display: block;
+        text-align: center;
+        line-height: 18px;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #f43939;
+        text-transform: uppercase;
+        margin: 0 0 18px;
+    }
+
+    .section7 > .leftBlock > h1, .section7 > .leftBlock > h3 {
+        display: none;
+    }
+
+    .section7 > .rightBlock {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .section7 > .rightBlock > form {
+        width: 407px;
+        margin: 0 auto;
+    }
+
+    .section7 > .rightBlock > .arrow1 {
+        margin: 0 auto 46.5px 223px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section7 {
+        background-image: none;
+    }
+
+    .section7 > h1 {
+        font-size: 28px;
+        line-height: 39px;
+        width: 330px;
+        margin-bottom: 43px;
+    }
+
+    .section7 > h3 {
+        margin-bottom: 16px;
+    }
+
+    .section7 > .rightBlock > .arrow1 {
+        margin: 0 24px 38px auto;
+    }
+
+    .section7 > .rightBlock > form {
+        width: 312px;
+        min-height: 489px;
+        padding-bottom: 24px;
+        margin-bottom: 61px;
+    }
+
+    .section7 > .rightBlock > form > input[type=text] {
+        width: 252px;
+    }
+
+    .section7 > .rightBlock > form > input:nth-of-type(3) {
+        width: 80px;
+    }
+
+    .section7 > .rightBlock > form > input:nth-of-type(4) {
+        width: 156px;
+    }
+
+    .section7 > .rightBlock > form > input[type=submit] {
+        width: 252px;
+        margin-bottom: 16px;
+    }
+
+    .section7 > .rightBlock > form > span {
+        margin-left: auto;
+        text-align: center;
+        line-height: 20px;
+        display: block;
+    }
+
+    .section7 > .leftBlock {
+        padding-bottom: 87px;
+    }
+
+    .section7 > .leftBlock > .countries {
+        margin: auto;
+    }
+
+    .section7 > .leftBlock > .arrow2 {
+        margin: 0 auto 25px 48px;
+    }
+}
 
 
 

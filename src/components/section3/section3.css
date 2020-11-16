@@ -1,17 +1,18 @@
 .section3 {
     display: flex;
-    margin-bottom: 228px;
+    margin-bottom: 227px;
 }
 
 .section3 > .leftBlock {
     width: 533px;
-    height: 592px;
+    min-height: 592px;
+    flex-shrink: 0;
 }
 
 .section3 > .leftBlock > .textBlock {
     position: relative;
     overflow: hidden;
-    height: 294px;
+    min-height: 294px;
     margin: 143px 75px 0 77px;
     padding: 0;
     text-align: left;
@@ -25,7 +26,7 @@
 }
 
 .section3 > .leftBlock > .textBlock > .CarouselTextBlock > h2 {
-    margin: 0;
+    margin: 0 0 24px;
     width: 290px;
     height: 88px;
     font-size: 32px;
@@ -36,11 +37,16 @@
 
 .section3 > .leftBlock > .textBlock > .CarouselTextBlock > p {
     width: 381px;
-    height: 90px;
+    min-height: 90px;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.67;
     color: #787c80;
+    margin: 0;
+}
+
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock > p > span {
+    white-space: nowrap;
 }
 
 .section3 > .leftBlock > .textBlock > .CarouselTextBlock.active {
@@ -142,4 +148,82 @@
 
 .section3 > .imgBlock > img.active {
     opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .section3 {
+        flex-direction: column;
+        margin-bottom: 33px;
+    }
+
+    .section3 > .leftBlock {
+        order: 1;
+    }
+
+    .section3 > .imgBlock {
+        width: 700px;
+        margin-left: auto;
+    }
+
+    .section3 > .leftBlock {
+        width: 100%;
+        min-height: 294px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .section3 > .leftBlock > .textBlock {
+        width: 381px;
+        position: relative;
+        overflow: hidden;
+        height: 294px;
+        margin: 60px 0 0 66px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .section3 > .leftBlock > .controls {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section3 {
+        flex-direction: column;
+        margin-bottom: 51px;
+    }
+
+    .section3 > .imgBlock {
+        height: 394px;
+        width: auto;
+        margin: 0;
+    }
+
+    .section3 > .leftBlock {
+        flex-direction: column;
+    }
+
+    .section3 > .leftBlock > .textBlock {
+        order: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    .section3 > .leftBlock > .textBlock > .CarouselTextBlock > h2 {
+        font-size: 28px;
+        line-height: 39px;
+        height: 78px;
+        margin: 0 auto 16px;
+    }
+
+    .section3 > .leftBlock > .textBlock > .CarouselTextBlock > p {
+        width: 290px;
+        margin: auto;
+    }
+    .section3 > .leftBlock > .textBlock > .CarouselTextBlock > p span{
+        white-space: normal;
+    }
+    .section3 > .leftBlock > .controls {
+        margin: 52px auto 50px;
+    }
 }

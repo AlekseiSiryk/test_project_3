@@ -1,6 +1,6 @@
 import React from 'react';
 import './section1.css';
-import homepage from './Home page_with shadow.png';
+import homepage from './Home page_no shadow.png';
 
 const Section1 = () => {
   return (

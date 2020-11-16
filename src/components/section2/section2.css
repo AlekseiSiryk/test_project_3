@@ -1,37 +1,173 @@
 .section2 {
-    margin-bottom: 108px;
+    margin-bottom: 89px;
 }
 
 .section2 > h2 {
-    margin: 0;
+    margin: 0 0 51px;
     font-size: 32px;
+    line-height: 44px;
     font-weight: bold;
-    color: #21272e;
 }
 
 .section2 > .logoBar {
     display: flex;
+    height: 130px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 152px 0 168px;
+    align-items: center;
+    padding: 0 148px;
 }
 
-.section2 > .logoBar > img.goCheken {
-    height: 98px;
+
+@media (max-width: 1280px) {
+    .section2 > .logoBar {
+        padding: 0 44px;
+    }
 }
 
-.section2 > .logoBar > img.jolliebean {
-    width: 115px;
+@media (max-width: 1024px) {
+    .section2 > h2 {
+        margin-bottom: 52px;
+    }
+
+    .section2 > .logoBar {
+        height: 117px;
+        padding: 0 24px;
+    }
+
+    .section2 > .logoBar > img {
+        width: 124px;
+    }
+
+    .section2 {
+        margin-bottom: 85px;
+    }
 }
 
-.section2 > .logoBar > img.bens {
-    height: 76px;
-}
+@media (max-width: 768px) {
+    .section2 {
+        margin-bottom: 44px;
+    }
 
-.section2 > .logoBar > img.simplyWrapps {
-    height: 130px;
-}
+    .section2 > h2 {
+        margin: 0 0 33px;
+        font-size: 28px;
+        line-height: 39px;
+    }
 
-.section2 > .logoBar > img.italian {
-    width: 130px;
+    .section2 > .logoBar {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+
+    .section2 > .logoBar > img {
+        position: absolute;
+        left: 424px;
+        animation-name: logoSlider;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+
+    .section2 > .logoBar > img:nth-of-type(1) {
+        animation-name: logoSlider, logoSlider2;
+        animation-delay: 8s, 0s;
+        animation-duration: 20s, 4s;
+        animation-iteration-count: infinite, 1;
+    }
+
+    .section2 > .logoBar > img:nth-of-type(2) {
+        animation-name: logoSlider, logoSlider2, logoSlider3;
+        animation-delay: 12s, 4s, 0s;
+        animation-duration: 20s, 4s, 4s;
+        animation-iteration-count: infinite, 1, 1;
+    }
+
+    .section2 > .logoBar > img:nth-of-type(3) {
+        animation-name: logoSlider, logoSlider2, logoSlider3, logoSlider4;
+        animation-delay: 16s, 8s, 4s, 0s;
+        animation-duration: 20s, 4s, 4s, 4s;
+        animation-iteration-count: infinite, 1, 1, 1;
+    }
+
+    .section2 > .logoBar > img:nth-of-type(4) {
+        animation-delay: 0s;
+    }
+
+    .section2 > .logoBar > img:nth-of-type(5) {
+        animation-delay: 4s;
+    }
+
+    @keyframes logoSlider {
+        0% {
+            left: 310px;
+        }
+        19% {
+            left: 310px;
+        }
+        20% {
+            left: 186px;
+        }
+        39% {
+            left: 186px;
+        }
+        40% {
+            left: 62px;
+        }
+        59% {
+            left: 62px;
+        }
+        60% {
+            left: -62px;
+        }
+        79% {
+            left: -62px;
+            opacity: 1;
+        }
+        80% {
+            left: -186px;
+            opacity: 0;
+        }
+        99% {
+            left: 434px;
+            opacity: 0;
+        }
+        100% {
+            left: 310px;
+            opacity: 1;
+        }
+    }
+    @keyframes logoSlider2 {
+        0% {
+            left: -62px;
+        }
+        96% {
+            left: -62px;
+        }
+        100% {
+            left: -186px;
+        }
+    }
+    @keyframes logoSlider3 {
+        0% {
+            left: 62px;
+        }
+        96% {
+            left: 62px;
+        }
+        100% {
+            left: -62px;
+        }
+    }
+    @keyframes logoSlider4 {
+        0% {
+            left: 186px;
+        }
+        96% {
+            left: 186px;
+        }
+        100% {
+            left: 62px;
+        }
+    }
 }

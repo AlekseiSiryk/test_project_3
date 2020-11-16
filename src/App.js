@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './App_low.css';
 import logo from './img/logo.svg';
 import logoWhite from './img/logo-white.svg';
 import inst from './img/icon-24-social-inst.svg';
@@ -21,6 +22,8 @@ function App() {
           <nav className="navBar">
             <a href="#"><img src={logo} alt="logo"/></a>
             <div className="separator"></div>
+            <label htmlFor="menuBtn" className="menuBtnLabel"></label>
+            <input type="checkbox" id="menuBtn"/>
             <a href="#">Home</a>
             <a href="#" className="active">Supplier</a>
             <a href="#">About</a>
@@ -41,12 +44,13 @@ function App() {
           <nav className="navBar">
             <a href="#"><img src={logoWhite} alt="logo"/></a>
             <div className="separator"></div>
-            <a href="#">Home</a>
-            <a href="#">Supplier</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">FAQ</a>
-            <a href="#">Legal</a>
+            <a href="#" className="footer-home">Home</a>
+            <a href="#" className="footer-supplier">Supplier</a>
+            <a href="#" className="footer-about">About</a>
+            <a href="#" className="footer-contact">Contact</a>
+            <a href="#" className="footer-faq">FAQ</a>
+            <a href="#" className="footer-blog">Blog</a>
+            <a href="#" className="footer-legal">Legal</a><div className="breaker" />
             <div className="separator"></div>
             <a href="#" className="inst"><img src={inst} alt="Instagram"/></a>
             <a href="#" className="link"><img src={link} alt="Linkedin"/></a>

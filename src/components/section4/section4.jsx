@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Lottie from 'react-lottie';
 import './section4.css';
 import before from './Before.png';
-import after from './After.png';
 import animation from './animation.json';
 
 const options = {
@@ -19,13 +18,13 @@ const Section4 = () => {
   const Img = activeCommunication === 'before' ?
       () => (<img src={before} alt="Before"/>) :
       () => (
-          <Lottie className="img" options={options} height={354} width={624}/>);
+          <Lottie className="img" options={options}/>);
   return (
       <section className="section4">
         <div className="imgBlock">
           <Img/>
         </div>
-        <div className="rightBlock">
+        <div className="communication">
           <h2>Communication</h2>
           <div className="controls">
             <input id="before"
@@ -45,6 +44,9 @@ const Section4 = () => {
               <div>AFTER</div>
             </label>
           </div>
+          <div className="line"></div>
+        </div>
+        <div className="textBlock">
           <h4 className={activeCommunication === 'before' ?
               'active' :
               'disabled'}>Old-School Chaos</h4>

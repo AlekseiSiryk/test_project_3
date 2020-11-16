@@ -1,0 +1,234 @@
+@media (max-width: 1280px) {
+    .navBar, main, section, .App-footer > div {
+        width: 1024px;
+    }
+
+    .App-header > .navBar > a:not(:first-child, :last-child) {
+        line-height: 14px;
+        height: 14px;
+        color: #21272e;
+    }
+    .App-header > .navBar > a.footer-supplier{
+        margin-left: 18px;
+    }
+    .App-header > .navBar > a.footer-about{
+        margin-left: 14.5px;
+    }
+    .App-header > .navBar > a.footer-contact{
+        margin-left: 18.5px;
+    }
+    .App-header > .navBar > a:first-child {
+        margin: 5px 14px 0 64px;
+    }
+
+    /*--------------------------------------------------------------------------*/
+
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+    .App-footer > .navBar > a:first-child {
+        margin-left: 31px;
+    }
+
+    .App-footer > .navBar > a.footer-supplier{
+        margin-left: 14px;
+    }
+    .App-footer > .navBar > a.footer-about{
+        margin-left: 17px;
+    }
+    .App-footer > .navBar > a.footer-contact{
+        margin-left: 17px;
+    }
+    .App-footer > .navBar > a.footer-faq{
+        margin-left: 20px;
+    }
+
+    .App-footer > .navBar > .separator:last-of-type {
+        margin-left: 15px;
+    }
+
+    .App-footer > .navBar > a.gPlay {
+        margin-right: 44px;
+    }
+
+    .App-footer > div {
+        padding-left: 48.5px;
+    }
+
+}
+/*--------------------------------------------------------------------------*/
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .navBar, main, section, .App-footer > div {
+        width: 768px;
+    }
+    .App-footer{
+        height: 193px;
+    }
+    .App-footer > .navBar{
+        flex-wrap: wrap;
+    }
+    .App-footer > .navBar > .breaker{
+        width: 100%;
+    }
+    .App-footer > .navBar > a.footer-blog{
+        display: initial;
+    }
+    .App-footer > .navBar > a.footer-supplier{
+        display: none;
+    }
+    .App-footer > .navBar > a.aStore {
+        margin-right: 6px;
+        margin-left: 108px;
+    }
+    .App-footer > .navBar > .separator:last-of-type {
+        margin-left: auto;
+    }
+    .App-footer > .navBar > a.gPlay {
+        margin-right: 30px;
+    }
+    .App-footer > div {
+        padding-left: 60px;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .navBar, main, section, .App-footer > div {
+        width: 360px;
+    }
+    .App-header{
+        height: auto;
+    }
+    .App-header > .navBar{
+        margin-top: 19px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .App-header > .navBar > div{
+        display: none;
+    }
+    .App-header > .navBar > a:first-child{
+        margin: 0 0 0 11px;
+    }
+    .App-header > .navBar > a{
+        margin-top: 0;
+    }
+    .App-header > .navBar > .menuBtnLabel{
+        display: initial;
+        position: absolute;
+        width: 74px;
+        height: 48px;
+        background: url("img/menu.svg") no-repeat center center;
+        right: 0;
+    }
+    .App-header > .navBar > #menuBtn:not(:checked) ~ a{
+        display: none;
+    }
+    .App-header > .navBar > #menuBtn:checked ~ a{
+        margin:auto;
+    }
+    /*--------------------------------------------------------------------------*/
+    .App-footer{
+        height: auto;
+    }
+    .App-footer> .navBar{
+        flex-wrap: wrap;
+        height: auto;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    .App-footer > .navBar > .separator {
+        display: none;
+    }
+    .App-footer > .navBar > a:first-child {
+        margin: 0 0 40px;
+        width: 100%;
+    }
+    .App-footer > .navBar > a:first-child > img {
+        margin: auto;
+        display: block;
+    }
+    .App-footer > .navBar > a.footer-supplier{
+        display: none;
+    }
+    .App-footer > .navBar > a.footer-home{
+        margin: 0 0 24px;
+        width: 100%;
+        line-height: 17px;
+    }
+    .App-footer > .navBar > a.footer-about{
+        margin: 0 0 24px;
+        width: 100%;
+        line-height: 17px;
+    }
+    .App-footer > .navBar > a.footer-contact{
+        margin: 0 0 24px;
+        width: 100%;
+        line-height: 17px;
+    }
+    .App-footer > .navBar > a.footer-faq{
+        margin: 0 0 24px;
+        width: 100%;
+        line-height: 17px;
+    }
+    .App-footer > .navBar > a.footer-blog{
+        display: initial;
+        margin: 0 0 24px;
+        width: 100%;
+        line-height: 17px;
+    }
+    .App-footer > .navBar > a.footer-legal{
+        margin: 0 0 40px;
+        width: 100%;
+        line-height: 17px;
+    }
+
+    .App-footer > .navBar > a.inst {
+        margin: 0 0 41px;
+        width: 50%;
+    }
+    .App-footer > .navBar > a.inst > img {
+        display: block;
+        margin: 0 12px 0 auto;
+    }
+    .App-footer > .navBar > a.link {
+        margin: 0 0 41px;
+        width: 50%;
+    }
+    .App-footer > .navBar > a.link > img {
+        display: block;
+        margin: 0 auto 0 12px;
+    }
+
+    .App-footer > .navBar > a.aStore {
+        margin: 0 9px 0 auto;
+        width: 128px;
+        height: 40px;
+    }
+    .App-footer > .navBar > a.aStore > img{
+        width: 128px;
+        height: 40px;
+    }
+
+    .App-footer > .navBar > a.gPlay {
+        margin: 0 auto 0 9px;
+        width: 128px;
+        height: 40px;
+    }
+    .App-footer > .navBar > a.gPlay > img{
+        width: 128px;
+        height: 40px;
+    }
+
+    .App-footer > div {
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 16px;
+    }
+
+}

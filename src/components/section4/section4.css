@@ -1,5 +1,8 @@
 .section4 {
-    display: flex;
+    text-align: left;
+    display: grid;
+    grid-template-areas: "img com" "img txt";
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 209px;
 }
 
@@ -8,6 +11,7 @@
     height: 354px;
     margin: 26px 122px 0 50px;
     position: relative;
+    grid-area: img;
 }
 
 .section4 > .imgBlock > img {
@@ -17,11 +21,11 @@
     left: 0%;
 }
 
-.section4 > .rightBlock {
-    text-align: left;
+.section4 > .communication {
+    grid-area: com;
 }
 
-.section4 > .rightBlock > h2 {
+.section4 > .communication > h2 {
     width: 290px;
     height: 44px;
     line-height: 44px;
@@ -30,18 +34,20 @@
     margin: 0 0 39px;
 }
 
-.section4 > .rightBlock > .controls {
+.section4 > .communication > .controls {
     display: flex;
-    margin-bottom: 121px;
+    margin-bottom: 64px;
 }
 
-.section4 > .rightBlock > .controls > input {
+.section4 > .communication > .controls > input {
     display: none;
 }
 
-.section4 > .rightBlock > .controls > label {
+.section4 > .communication > .controls > label {
     margin-right: 24px;
     width: 128px;
+    height: 48px;
+    box-sizing: border-box;
     line-height: 48px;
     border-radius: 6px;
     border: solid 1px rgba(144, 149, 153, 0.35);
@@ -53,21 +59,33 @@
     color: #787c80;
 }
 
-.section4 > .rightBlock > .controls > input:checked + label {
+.section4 > .communication > .controls > input:checked + label {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-    border: solid 1px rgba(33, 39, 46, 0.15);
+    outline: solid 1px rgba(33, 39, 46, 0.15);
     font-size: 13px;
     color: #f43939;
 }
 
-.section4 > .rightBlock > h4 {
+.section4 > .communication > .line {
+    width: 408px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: #21272e;
+    margin-bottom: 57px;
+}
+
+.section4 > .textBlock {
+    grid-area: txt;
+}
+
+.section4 > .textBlock > h4 {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.67;
     margin: 0 0 8px;
 }
 
-.section4 > .rightBlock > p {
+.section4 > .textBlock > p {
     width: 398px;
     font-size: 18px;
     font-weight: 600;
@@ -76,6 +94,74 @@
     margin: 0;
 }
 
-.section4 > .rightBlock .disabled {
+.section4 > .textBlock .disabled {
     display: none;
+}
+
+@media (max-width: 1280px) {
+    .section4 > .imgBlock {
+        width: 457px;
+        height: auto;
+        margin: 70px 60px 0 50px;
+    }
+
+    .section4 > .imgBlock > img {
+        width: 457px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section4 {
+        text-align: center;
+        grid-template-areas: "com" "img" "txt";
+        grid-template-columns: auto;
+        margin-bottom: 166px;
+    }
+
+    .section4 > div, .section4 > .imgBlock {
+        margin: auto;
+    }
+
+    .section4 > .imgBlock {
+        margin: 0 auto 59px 127px;
+    }
+
+    .section4 > .communication > h2 {
+        margin-bottom: 46px;
+    }
+
+    .section4 > .communication > .controls {
+        margin-bottom: 98px;
+    }
+
+    .section4 > .communication > .line {
+        display: none;
+    }
+
+    .section4 > .textBlock > p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section4 {
+        margin-bottom: 120px;
+    }
+
+    .section4 > .communication > .controls {
+        margin-bottom: 70px;
+    }
+
+    .section4 > .imgBlock {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .section4 > .imgBlock > img {
+        width: 100%;
+        height: auto;
+    }
 }

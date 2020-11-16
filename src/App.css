@@ -27,12 +27,26 @@
     src: url("HandOfSeanRegular.woff2");
 }
 
+a:visited {
+    color: #21272e;
+}
+
+#pos {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    font-size: 20px;
+    background-color: #3897ff;
+    padding: 10px;
+}
+
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     font-family: Manrope3;
+    text-align: center;
     color: #21272e;
 }
 
@@ -44,25 +58,30 @@
     justify-content: center;
 }
 
-.App-header > .navBar {
+.navBar, main, section, .App-footer > div {
     width: 1280px;
+}
+
+.App-header > .navBar {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    margin-top: 18px;
+    margin-top: 5px;
 }
-
+.App-header > .navBar > input, .App-header > .navBar > .menuBtnLabel{
+    display: none;
+}
 .navBar > a {
     text-decoration: none;
     transition: 0.4s;
     margin-left: 12px;
     margin-right: 12px;
     font-size: 12px;
-    color: #21272e;
 }
 
 .App-header > .navBar > a:first-child {
     margin: 18px 14px 14px 64px;
+    height: 48px;
 }
 
 .App-header > .navBar > .separator {
@@ -70,7 +89,7 @@
     height: 24px;
     opacity: 0.2;
     background-color: #21272e;
-    margin-right: 18px;
+    margin-right: 13px;
 }
 
 .App-header > .navBar > a.active, .navBar > a:hover {
@@ -87,29 +106,21 @@
     line-height: 36px;
 }
 
+main{
+    overflow: hidden;
+}
 /*--------------------------------------------------------------------------*/
 
-.App-main {
-    width: 1280px;
-    text-align: center;
-}
-
-.App-main > section {
-    width: 1280px;
-}
-
-/*--------------------------------------------------------------------------*/
 .App-footer {
     width: 100vw;
     height: 146px;
     background-color: #21272e;
+    text-align: left;
 }
 
 .App-footer > .navBar {
-    width: 1280px;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     height: 48px;
     margin: 48px auto 23px;
@@ -121,37 +132,37 @@
 
 .App-footer > .navBar > a:first-child {
     margin-left: 63px;
+    margin-right: 0;
 }
-
+.App-footer > .navBar > a.footer-blog {
+    display: none;
+}
 .App-footer > .navBar > .separator {
     width: 1px;
     height: 24px;
     opacity: 0.2;
     background-color: white;
-    margin: 12px;
+    margin: 0 12px;
 }
 
 .App-footer > .navBar > a.inst {
-    margin: 14px 0 0 12px;
+    margin-right: 0;
 }
 
 .App-footer > .navBar > a.link {
-    margin: 14px 0 0 16px;
+    margin: 0 0 0 16px;
+}
+
+.App-footer > .navBar > a.aStore {
+    margin-right: 4px;
+    margin-left: auto;
 }
 
 .App-footer > .navBar > a.gPlay {
     margin-right: 76px;
-    margin-top: 4px;
-}
-
-.App-footer > .navBar > a.aStore {
-    margin-right: 16px;
-    margin-left: auto;
-    margin-top: 4px;
 }
 
 .App-footer > div {
-    width: 1280px;
     height: 15px;
     font-size: 11px;
     font-weight: 500;

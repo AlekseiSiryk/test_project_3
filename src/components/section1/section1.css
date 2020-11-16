@@ -1,10 +1,14 @@
 .section1 {
     padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("Boxes.png"), url("Fruits.png");
     background-position: -131px 44px, 106.55% 44px;
     background-size: auto 576px, auto 536px;
     background-repeat: no-repeat;
-    margin-bottom: 117px;;
+    margin-bottom: 124px;
+    overflow: hidden;
 }
 
 .section1 > h4 {
@@ -36,7 +40,6 @@
     color: white;
     font-family: Manrope3;
     font-size: 15px;
-    font-weight: 500;
     line-height: 1.33;
     text-align: right;
     padding-right: 30px;
@@ -54,4 +57,69 @@
 .section1 > img {
     width: 984px;
     height: 550px;
+}
+
+@media (max-width: 1280px) {
+    .section1 {
+        background-position: -218px 43px, 121.1% 29px;
+        background-size: auto 550px, auto 524px;
+    }
+
+    .section1 > img {
+        height: 549px;
+    }
+
+    .section1 > p {
+        margin-bottom: 133px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .section1 {
+        background-position: -254px 42px, 137% 29px;
+        background-size: auto 560px, auto 524px;
+        margin-bottom: 114px;
+    }
+
+    .section1 > h2 {
+        width: 100%;
+        height: 224px;
+        line-height: 1.34;
+    }
+
+    .section1 > p {
+        margin-bottom: 94px;
+    }
+
+    .section1 > img {
+        width: 689px;
+        height: 358px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section1 {
+        background-position: -180px 448px, 202px 518px;
+        background-size: auto 560px, auto 524px;
+        margin-bottom: 90px;
+        padding-top: 52px;
+    }
+
+    .section1 > h2 {
+        width: 312px;
+        height: 203px;
+        font-size: 28px;
+    }
+
+    .section1 > p {
+        margin-bottom: 680px;
+    }
+
+    .section1 > img {
+        width: auto;
+        height: 385px;
+        margin: 0 0 0 41px;
+        align-self: flex-start;
+    }
 }
