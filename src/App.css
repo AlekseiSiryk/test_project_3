@@ -27,17 +27,8 @@
     src: url("HandOfSeanRegular.woff2");
 }
 
-a:visited {
+a:visited, a {
     color: #21272e;
-}
-
-#pos {
-    position: fixed;
-    top: 1%;
-    left: 1%;
-    font-size: 20px;
-    background-color: #3897ff;
-    padding: 10px;
 }
 
 .App {
