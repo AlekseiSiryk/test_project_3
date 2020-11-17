@@ -3,6 +3,12 @@
     display: flex;
 }
 
+.section7 > .iceBlueTwo {
+    background: linear-gradient(to bottom, white, #f7f9fa);
+    height: 850px;
+    left: 0;
+}
+
 .section7 > h1, .section7 > h3 {
     display: none;
 }
@@ -10,11 +16,19 @@
 .section7 > .leftBlock {
     padding-top: 224px;
     width: 724px;
-    background-image: url("noise.png");
+/*    background-image: url("noise.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: -120px 135px;
+    background-position: -120px 135px;*/
     padding-bottom: 91px;
+    position: relative;
+}
+.section7 > .leftBlock > .noise {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    transform: translate(-115px, -89px);
 }
 
 .section7 > .leftBlock > h3 {
@@ -147,6 +161,10 @@
     box-sizing: border-box;
     margin-bottom: 32px;
 }
+.section7 > .rightBlock > form > input:not([type=submit]):active, .section7 > .rightBlock > form > input:not([type=submit]):focus {
+    outline: none;
+    box-shadow: none;
+}
 
 .section7 > .rightBlock > form > input::placeholder {
     color: #b4babf;
@@ -176,6 +194,10 @@
     outline: none;
 }
 
+.section7 > .rightBlock > form > input[type=submit]:hover {
+    background: rgb(237, 59, 59);
+}
+
 .section7 > .rightBlock > form > span {
     font-size: 12px;
     font-weight: 500;
@@ -191,6 +213,14 @@
         background-position: -100px 160px;
         background-size: 123% auto;
         padding-bottom: 186px;
+    }
+    .section7 > .iceBlueTwo {
+        height: 950px;
+    }
+    .section7 > .leftBlock > .noise {
+        width: 123%;
+        height: auto;
+        transform: translate(-104px, -74px);
     }
 
     .section7 > .leftBlock > h1 {
@@ -220,12 +250,17 @@
 
 @media (max-width: 1024px) {
     .section7 {
-        background-image: url("noise.png");
+/*        background-image: url("noise.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: -160px -60px;
+        background-position: -160px -60px;*/
         flex-direction: column;
         align-items: center;
+        padding-top: 207px;
+    }
+
+    .section7 > .iceBlueTwo {
+        height: 1200px;
     }
 
     .section7 > .leftBlock {
@@ -234,6 +269,12 @@
         order: 1;
         width: 100%;
         background-image: none;
+    }
+    .section7 > .leftBlock > .noise {
+        width: 92%;
+        top:0;
+        left: 0;
+        transform: translate(-120px, -790px);
     }
 
     .section7 > .leftBlock > .arrow2 {
@@ -292,6 +333,11 @@
 @media (max-width: 768px) {
     .section7 {
         background-image: none;
+        padding-top: 150px;
+    }
+
+    .section7 > .iceBlueTwo {
+        height: 1250px;
     }
 
     .section7 > h1 {
@@ -344,7 +390,12 @@
         padding-bottom: 87px;
     }
 
+    .section7 > .leftBlock > .noise{
+        display: none;
+    }
+
     .section7 > .leftBlock > .countries {
+        background: white;
         margin: auto;
     }
 

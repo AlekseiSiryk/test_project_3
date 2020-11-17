@@ -95,6 +95,9 @@
 /*--------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
+    .iceBlueTwo {
+        height: 1188px;
+    }
     .navBar, main, section, .App-footer > div {
         width: 360px;
     }
@@ -102,12 +105,15 @@
         height: auto;
     }
     .App-header > .navBar{
-        margin-top: 19px;
+        padding-top: 19px;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         height: auto;
+        overflow: hidden;
+        width: 100vw;
+        height: 67px;
     }
     .App-header > .navBar > div{
         display: none;
@@ -117,6 +123,7 @@
     }
     .App-header > .navBar > a{
         margin-top: 0;
+        font-size: 20px;
     }
     .App-header > .navBar > .menuBtnLabel{
         display: initial;
@@ -126,11 +133,62 @@
         background: url("img/menu.svg") no-repeat center center;
         right: 0;
     }
-    .App-header > .navBar > #menuBtn:not(:checked) ~ a{
-        display: none;
+
+    .App-header > #menuBtn:checked + nav{
+        height: 100vh;
+        box-sizing: border-box;
+        padding-bottom: 80px;
+        background-color: white;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 1;
     }
-    .App-header > .navBar > #menuBtn:checked ~ a{
-        margin:auto;
+    .App-header > #menuBtn:checked + nav > a:first-of-type {
+        margin-right: auto;
+    }
+    .App-header > #menuBtn:checked + nav > label ~ a {
+        margin: 40px auto;
+        transition: 0.1s;
+    }
+    .App-header > #menuBtn:checked + nav > a:nth-of-type(2) {
+        margin-top: auto;
+    }
+    .App-header > #menuBtn:checked + nav > a:last-of-type {
+        margin: auto auto 0;
+        width: 90%;
+        height: 52px;
+        border-radius: 8px;
+        background-image: linear-gradient(107deg, #ff474d, #fa4353);
+        font-family: Manrope3;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 52px;
+        color: white;
+        border: none;
+        outline: none;
+        transition: 0s;
+    }
+    .App-header > #menuBtn:checked + nav > a:last-of-type:hover {
+        background: rgb(237, 59, 59);
+    }
+    .App-header > #menuBtn:checked + .navBar > .menuBtnLabel{
+        background: none;
+    }
+    .App-header > #menuBtn:checked + .navBar > .menuBtnLabel::before, .App-header > #menuBtn:checked + .navBar > .menuBtnLabel::after{
+        content: "";
+        width: 3px;
+        height: 60%;
+        background: #21272e;
+        position: absolute;
+        transform: rotate(45deg);
+        margin: auto;
+        top:0;left:0;right:0;bottom:0;
+    }
+    .App-header > #menuBtn:checked + .navBar > .menuBtnLabel::before{
+        transform: rotate(-45deg);
     }
     /*--------------------------------------------------------------------------*/
     .App-footer{
@@ -230,5 +288,4 @@
         padding-left: 0px;
         margin-bottom: 16px;
     }
-
 }

@@ -6,6 +6,11 @@
     margin-bottom: 209px;
 }
 
+.section4 > .iceBlueTwo{
+    transform: translateY(-96px);
+    height: 559px;
+}
+
 .section4 > .imgBlock {
     width: 624px;
     height: 354px;
@@ -60,10 +65,11 @@
 }
 
 .section4 > .communication > .controls > input:checked + label {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-    outline: solid 1px rgba(33, 39, 46, 0.15);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.11);
+    border: solid 1px rgba(33, 39, 46, 0.05);
     font-size: 13px;
     color: #f43939;
+    background-color: rgba(255,255,255,1);
 }
 
 .section4 > .communication > .line {
@@ -119,6 +125,11 @@
         margin-bottom: 166px;
     }
 
+    .section4 > .iceBlueTwo{
+        transform: translateY(-64px);
+        height: 875px;
+    }
+
     .section4 > div, .section4 > .imgBlock {
         margin: auto;
     }
@@ -147,6 +158,9 @@
 @media (max-width: 768px) {
     .section4 {
         margin-bottom: 120px;
+    }
+    .section4 > .iceBlueTwo{
+        height: 749px;
     }
 
     .section4 > .communication > .controls {

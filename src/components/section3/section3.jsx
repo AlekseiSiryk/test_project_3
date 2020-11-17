@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './section3.css';
-import orders from './Orders.jpg';
+import orders from './Orders.png';
 import operationalCosts from './Operational Costs.png';
 import analytics from './Analytics.png';
 

@@ -3,12 +3,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("Boxes.png"), url("Fruits.png");
-    background-position: -131px 44px, 106.55% 44px;
-    background-size: auto 576px, auto 536px;
-    background-repeat: no-repeat;
+    /*    background-image: url("Boxes.png"), url("Fruits.png");
+        background-position: -131px 44px, 106.55% 44px;
+        background-size: auto 576px, auto 536px;
+        background-repeat: no-repeat;*/
     margin-bottom: 124px;
-    overflow: hidden;
+}
+
+.section1 > .boxes {
+    position: absolute;
+    align-self: flex-start;
+    transform: translate(-131px, -71px);
+    width: auto;
+    height: 576px;
+}
+
+.section1 > .fruits {
+    position: absolute;
+    transform: translate(64px, -84px);
+    width: auto;
+    height: 536px;
+    align-self: flex-end;
 }
 
 .section1 > h4 {
@@ -41,9 +56,11 @@
     font-family: Manrope3;
     font-size: 15px;
     line-height: 1.33;
-    text-align: right;
-    padding-right: 30px;
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.section1 > button:hover {
+    background: rgb(237, 59, 59);
 }
 
 .section1 > p {
@@ -65,6 +82,16 @@
         background-size: auto 550px, auto 524px;
     }
 
+    .section1 > .boxes {
+        transform: translate(-218px, -70px);
+        height: 550px;
+    }
+
+    .section1 > .fruits {
+        transform: translate(151px, -86px);
+        height: 524px;
+    }
+
     .section1 > img {
         height: 549px;
     }
@@ -80,6 +107,16 @@
         background-position: -254px 42px, 137% 29px;
         background-size: auto 560px, auto 524px;
         margin-bottom: 114px;
+    }
+
+    .section1 > .boxes {
+        transform: translate(-254px, -75px);
+        height: 560px;
+    }
+
+    .section1 > .fruits {
+        transform: translate(166px, -88px);
+        height: 530px;
     }
 
     .section1 > h2 {
@@ -104,6 +141,17 @@
         background-size: auto 560px, auto 524px;
         margin-bottom: 90px;
         padding-top: 52px;
+        position: relative;
+    }
+
+    .section1 > .boxes {
+        transform: translate(-230px, 400px);
+        height: 560px;
+    }
+
+    .section1 > .fruits {
+        transform: translate(124px, 460px);
+        height: 530px;
     }
 
     .section1 > h2 {

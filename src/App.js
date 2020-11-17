@@ -14,16 +14,21 @@ import Section4 from './components/section4/section4';
 import Section5 from './components/section5/section5';
 import Section6 from './components/section6/section6';
 import Section7 from './components/section7/section7';
-
+setTimeout(()=>{
+  document.getElementsByClassName('App-header')[0].addEventListener('click', (e) => {
+    if (e.target.tagName === "A") document.getElementById("menuBtn").checked = false;
+  });
+},0)
 function App() {
   return (
       <div className="App">
+        <div className="iceBlueTwo"></div>
         <header className="App-header">
+          <input type="checkbox" id="menuBtn"/>
           <nav className="navBar">
             <a href="#"><img src={logo} alt="logo"/></a>
             <div className="separator"></div>
             <label htmlFor="menuBtn" className="menuBtnLabel"></label>
-            <input type="checkbox" id="menuBtn"/>
             <a href="#">Home</a>
             <a href="#" className="active">Supplier</a>
             <a href="#">About</a>

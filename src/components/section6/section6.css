@@ -2,6 +2,11 @@
     margin-bottom: 90px;
 }
 
+.section6 > .iceBlueTwo{
+    transform: translateY(-88px);
+    height: 503px;
+}
+
 .section6 > h4 {
     line-height: 18px;
     font-size: 13px;
@@ -50,7 +55,7 @@
     content: "";
     width: 121px;
     height: 56px;
-    background-color: white;
+    background: rgb(250, 251, 252);
     position: absolute;
     z-index: -1;
 }
@@ -95,7 +100,11 @@
 
 @media (max-width: 1024px) {
     .section6 {
-        margin-bottom: 207px;
+        margin-bottom: 0px;
+    }
+
+    .section6 > .iceBlueTwo{
+        height: 927px;
     }
 
     .section6 > h2 {
@@ -118,7 +127,7 @@
     }
 
     .section6 > .row > div {
-        background-color: white;
+        background: rgb(250, 251, 252);
     }
 
     .section6 > .row > div::before {
@@ -134,7 +143,7 @@
         width: 100%;
         height: 24px;
         transform: translateY(19px);
-        background-color: white;
+        background: rgb(250, 251, 252);
         position: absolute;
         z-index: -1;
     }
@@ -158,7 +167,11 @@
 
 @media (max-width: 768px) {
     .section6 {
-        margin-bottom: 150px;
+        margin-bottom: 0px;
+    }
+
+    .section6 > .iceBlueTwo{
+        transform: translateY(-73px);
     }
 
     .section6 > h2 {

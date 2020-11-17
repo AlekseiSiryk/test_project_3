@@ -1,6 +1,7 @@
 import React from 'react';
 import './section7.css';
 import './flags.css';
+import noise from './noise.png';
 
 const Country = ({ct, country}) => {
   return (
@@ -13,11 +14,13 @@ const Country = ({ct, country}) => {
 const Section7 = () => {
   return (
       <section className="section7">
+        <div className="iceBlueTwo"></div>
         <h3> let’s do this </h3>
         <h1>
           Fill up the form and we’ll get in touch within a few hours
         </h1>
         <div className="leftBlock">
+          <img src={noise} className="noise"/>
           <h3>let’s do this</h3>
           <h1>
             <span
@@ -47,8 +50,8 @@ const Section7 = () => {
             <h3>Hi, we are Tinvio! And you?</h3>
             <input type="text" placeholder="Name"/>
             <input type="text" placeholder="Business Name"/>
-            <input type="number" placeholder="+65"/>
-            <input type="number"/>
+            <input type="tel" placeholder="+65"/>
+            <input type="tel"/>
             <input type="submit" value="Get Started"/>
             <span>No spam, promise 🙌</span>
           </form>
