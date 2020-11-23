@@ -22,11 +22,8 @@ const Section7 = () => {
         <div className="leftBlock">
           <img src={noise} className="noise"/>
           <h3>let’s do this</h3>
-          <h1>
-            <span
-                className="span2">Fill up the form and we’ll get in </span> touch
-            within
-            <span className="span1"> a few hours</span>
+          <h1>Fill up the form and we’ll get in touch within {" "}
+            <span className="span1">a few hours</span>
           </h1>
           <div className="arrow2">
             <span>Or meet us in</span>

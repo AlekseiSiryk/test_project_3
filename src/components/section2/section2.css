@@ -1,6 +1,14 @@
 .section2 {
+    margin-top: -171px;
     margin-bottom: 89px;
 }
+
+.section2 > .homepageImg {
+    width: auto;
+    height: 605px;
+    margin-bottom: 61px;
+}
+
 
 .section2 > h2 {
     margin: 0 0 51px;
@@ -10,24 +18,30 @@
 }
 
 .section2 > .logoBar {
+    max-width: 1280px;
+    width: 100%;
     display: flex;
     height: 130px;
     justify-content: space-between;
     align-items: center;
-    align-items: center;
     padding: 0 148px;
+    margin: auto;
 }
 
-
-@media (max-width: 1280px) {
+@media (max-width: 1279px) and (min-width: 1024px) {
     .section2 > .logoBar {
-        padding: 0 44px;
+        padding: 0 calc((100vw - 914px) / 2.5);
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .section2 > h2 {
         margin-bottom: 52px;
+    }
+
+    .section2 > .homepageImg {
+        height: 423px;
+        margin-bottom: 67px;
     }
 
     .section2 > .logoBar {
@@ -44,21 +58,29 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .section2 {
+        margin-top: -73px;
         margin-bottom: 44px;
     }
-
+    .section2 > .homepageImg {
+        margin-bottom: 44px;
+    }
     .section2 > h2 {
-        margin: 0 0 33px;
+        margin: 0 auto 33px;
         font-size: 28px;
         line-height: 39px;
+        width: 334px;
+        max-width: 90%;
     }
+}
 
+@media (max-width: 620px) {
     .section2 > .logoBar {
         position: relative;
-        width: 100%;
+        width: 372px;
         padding: 0;
+        overflow: hidden;
     }
 
     .section2 > .logoBar > img {

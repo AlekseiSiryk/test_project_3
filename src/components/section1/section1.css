@@ -1,29 +1,15 @@
 .section1 {
+    width: 1510px;
+    height: 700px;
     padding-top: 115px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*    background-image: url("Boxes.png"), url("Fruits.png");
-        background-position: -131px 44px, 106.55% 44px;
-        background-size: auto 576px, auto 536px;
-        background-repeat: no-repeat;*/
-    margin-bottom: 124px;
-}
-
-.section1 > .boxes {
-    position: absolute;
-    align-self: flex-start;
-    transform: translate(-131px, -71px);
-    width: auto;
-    height: 576px;
-}
-
-.section1 > .fruits {
-    position: absolute;
-    transform: translate(64px, -84px);
-    width: auto;
-    height: 536px;
-    align-self: flex-end;
+    background-image: url("Boxes.png"), url("Fruits.png");
+    background-repeat: no-repeat;
+    background-position: left -20px top 34%, right -10px top 15%;
+    background-size: 420px, 350px;
+    margin: 0 calc((100% - 1510px) / 2);
 }
 
 .section1 > h4 {
@@ -53,9 +39,8 @@
     outline: none;
     background-image: linear-gradient(104deg, #ff474d, #fa4353);
     color: white;
-    font-family: Manrope3;
     font-size: 15px;
-    line-height: 1.33;
+    line-height: 52px;
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -71,25 +56,11 @@
     margin-bottom: 132px;
 }
 
-.section1 > img {
-    width: 984px;
-    height: 550px;
-}
-
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .section1 {
-        background-position: -218px 43px, 121.1% 29px;
-        background-size: auto 550px, auto 524px;
-    }
-
-    .section1 > .boxes {
-        transform: translate(-218px, -70px);
-        height: 550px;
-    }
-
-    .section1 > .fruits {
-        transform: translate(151px, -86px);
-        height: 524px;
+        width: 100%;
+        margin: auto;
+        background-position: left -240px top 34%, right -165px top 15%;
     }
 
     .section1 > img {
@@ -102,25 +73,14 @@
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .section1 {
-        background-position: -254px 42px, 137% 29px;
-        background-size: auto 560px, auto 524px;
-        margin-bottom: 114px;
-    }
+        background-position: left -280px top 25%, right -196px bottom 90%;
 
-    .section1 > .boxes {
-        transform: translate(-254px, -75px);
-        height: 560px;
-    }
-
-    .section1 > .fruits {
-        transform: translate(166px, -88px);
-        height: 530px;
     }
 
     .section1 > h2 {
-        width: 100%;
+        width: 96%;
         height: 224px;
         line-height: 1.34;
     }
@@ -135,29 +95,21 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .section1 {
-        background-position: -180px 448px, 202px 518px;
-        background-size: auto 560px, auto 524px;
+        height: 1040px;
+        background-size: 390px, 320px;
+        background-position: left -170px bottom 8%, right -170px bottom 0%;
         margin-bottom: 90px;
         padding-top: 52px;
-        position: relative;
-    }
-
-    .section1 > .boxes {
-        transform: translate(-230px, 400px);
-        height: 560px;
-    }
-
-    .section1 > .fruits {
-        transform: translate(124px, 460px);
-        height: 530px;
     }
 
     .section1 > h2 {
+        max-width: 100%;
         width: 312px;
-        height: 203px;
+        min-height: 155px;
         font-size: 28px;
+        margin-bottom: 48px;
     }
 
     .section1 > p {

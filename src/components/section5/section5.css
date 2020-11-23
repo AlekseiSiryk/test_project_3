@@ -1,10 +1,13 @@
 .section5 {
-    margin-bottom: 210px;
+    padding-top: 127px;
+    height: 982px;
 }
 
 .section5 > .textBlock {
     display: flex;
     text-align: left;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .section5 > .textBlock > h2 {
@@ -25,8 +28,10 @@
 }
 
 .section5 > .imgBlock {
-    margin: 0 125px;
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
 }
 
 .section5 > .imgBlock > div {
@@ -98,9 +103,9 @@
 }
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .section5 {
-        margin-bottom: 193.5px;
+        height: 878px;
     }
 
     .section5 > .textBlock > h2 {
@@ -152,9 +157,10 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .section5 {
-        margin-bottom: 208px;
+        padding-top: 96px;
+        height: 2917px;
     }
 
     .section5 > .textBlock {
@@ -224,9 +230,10 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .section5 {
-        margin-bottom: 122px;
+        height: 1927px;
+        padding-top: 60px;
     }
 
     .section5 > .textBlock > h2 {

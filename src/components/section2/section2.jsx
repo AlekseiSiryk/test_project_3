@@ -5,10 +5,12 @@ import jolliebean from './logo/Jolliebean.png';
 import bens from './logo/Bens.png';
 import simplyWrapps from './logo/SimplyWrapps.jpg';
 import italian from './logo/Italian.jpg';
+import homepageWithShadow from './Home page_with shadow.png';
 
 const Section2 = () => {
   return (
       <section className="section2">
+        <img className="homepageImg" src={homepageWithShadow} alt="Home Page"/>
         <h2>Trusted by 1000+ partners across APAC</h2>
         <div className="logoBar">
           <img src={goCheken} className="goCheken" alt="goCheken logo"/>

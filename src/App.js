@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import './App_low.css';
-import logo from './img/logo.svg';
 import logoWhite from './img/logo-white.svg';
 import inst from './img/icon-24-social-inst.svg';
 import link from './img/icon-24-social-linkedin.svg';
@@ -14,28 +13,19 @@ import Section4 from './components/section4/section4';
 import Section5 from './components/section5/section5';
 import Section6 from './components/section6/section6';
 import Section7 from './components/section7/section7';
+import Header from './components/header/header';
+
 setTimeout(()=>{
   document.getElementsByClassName('App-header')[0].addEventListener('click', (e) => {
     if (e.target.tagName === "A") document.getElementById("menuBtn").checked = false;
   });
-},0)
+},0);
+
 function App() {
   return (
       <div className="App">
         <div className="iceBlueTwo"></div>
-        <header className="App-header">
-          <input type="checkbox" id="menuBtn"/>
-          <nav className="navBar">
-            <a href="#"><img src={logo} alt="logo"/></a>
-            <div className="separator"></div>
-            <label htmlFor="menuBtn" className="menuBtnLabel"></label>
-            <a href="#">Home</a>
-            <a href="#" className="active">Supplier</a>
-            <a href="#">About</a>
-            <a href="#">Contacts</a>
-            <a href="#">Get Started</a>
-          </nav>
-        </header>
+        <Header/>
         <main className="App-main">
           <Section1/>
           <Section2/>

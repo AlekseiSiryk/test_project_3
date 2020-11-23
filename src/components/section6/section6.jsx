@@ -7,7 +7,6 @@ import icon3 from './icon3.jpg';
 const Section6 = () => {
   return (
       <section className="section6">
-        <div className="iceBlueTwo"></div>
         <h4>ARE YOU READY?</h4>
         <h2>3 Simple Steps to Get Started</h2>
         <div className="row">

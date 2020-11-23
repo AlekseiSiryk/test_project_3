@@ -1,6 +1,8 @@
+@import "animation.css";
 .section3 {
     display: flex;
-    margin-bottom: 227px;
+    justify-content: center;
+    margin-bottom: 131px;
 }
 
 .section3 > .leftBlock {
@@ -12,7 +14,7 @@
 .section3 > .leftBlock > .textBlock {
     position: relative;
     overflow: hidden;
-    min-height: 294px;
+    min-height: 232px;
     margin: 143px 75px 0 77px;
     padding: 0;
     text-align: left;
@@ -49,46 +51,68 @@
     white-space: nowrap;
 }
 
-.section3 > .imgBlock > img.active {
+.section3 > .imgBlock {
+    width: 747px;
+    height: 592px;
+    position: relative;
+}
+.section3 > .imgBlock > .imgWrapper {
+    background: rgb(252, 237, 232);
+    border-radius: 50px;
+    height: 100%;
+    position: absolute;
+    padding-top: 46px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.section3 > .imgBlock > .imgWrapper:nth-of-type(3) {
+    padding-left: 52px;
+}
+
+.section3 > .imgBlock img {
+    height: 100%;
+    margin-left: -46px;
+
+}
+.section3 > .imgBlock > .imgWrapper:nth-of-type(3) > img {
+    height: calc(100% - 46px);
+}
+
+.section3 > .imgBlock > .imgWrapper.activeForward {
     opacity: 1;
     animation: slide 0.4s 1;
 }
 
-.section3 > .imgBlock > img:not(.active) {
+.section3 > .imgBlock > .imgWrapper.activeReverse {
+    animation: slideReverse 0.4s 1;
+    opacity: 1;
+}
+.section3 > .imgBlock > .imgWrapper.backForward {
+    opacity: 0;
     animation: hidden 0.4s 1;
+}
+
+.section3 > .imgBlock > .imgWrapper.backReverse {
+    animation: hiddenReverse 0.4s 1;
     opacity: 0;
 }
 
-.section3 > .leftBlock > .textBlock > .CarouselTextBlock.active {
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock.activeForward {
     opacity: 1;
     animation: slide 0.4s 1;
 }
-
-.section3 > .leftBlock > .textBlock > .CarouselTextBlock:not(.active) {
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock.activeReverse {
+    opacity: 1;
+    animation: slideReverse 0.4s 1;
+}
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock.backForward {
     animation: hidden 0.4s 1;
     opacity: 0;
 }
-
-@keyframes slide {
-    0% {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-}
-
-@keyframes hidden {
-    0% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
+.section3 > .leftBlock > .textBlock > .CarouselTextBlock.backReverse {
+    animation: hiddenReverse 0.4s 1;
+    opacity: 0;
 }
 
 .section3 > .leftBlock > .controls {
@@ -147,36 +171,16 @@
 
 .section3 > .leftBlock > .controls > button:disabled {
     /*opacity: 0.25;*/
-    /*background-color: white;*/
     background: white;
 }
 .section3 > .leftBlock > .controls > button:disabled::after{
     opacity: 0.25;
 }
 
-.section3 > .imgBlock {
-    width: 747px;
-    height: 592px;
-    position: relative;
-}
-
-.section3 > .imgBlock > img {
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.section3 > .imgBlock > img.active {
-    opacity: 1;
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .section3 {
         flex-direction: column;
-        margin-bottom: 33px;
+        margin-bottom: 0px;
     }
 
     .section3 > .leftBlock {
@@ -185,12 +189,13 @@
 
     .section3 > .imgBlock {
         width: 700px;
-        margin-left: auto;
+        margin-left: 68px;
     }
 
     .section3 > .leftBlock {
         width: 100%;
-        min-height: 294px;
+        height: 323px;
+        min-height: 323px;
         display: flex;
         align-items: flex-start;
     }
@@ -199,29 +204,28 @@
         width: 381px;
         position: relative;
         overflow: hidden;
-        height: 294px;
+        height: 232px;
         margin: 60px 0 0 66px;
         padding: 0;
         text-align: left;
     }
 
     .section3 > .leftBlock > .controls {
-        margin-top: 80px;
-        margin-right: 40px;
+        margin-top: 68px;
+        margin-right: auto;
         margin-left: auto;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .section3 {
         flex-direction: column;
-        margin-bottom: 51px;
-
+        height: 801px;
     }
 
     .section3 > .imgBlock {
         height: 394px;
-        width: auto;
+        width: 100%;
         margin: 0;
     }
 
@@ -232,7 +236,7 @@
     .section3 > .leftBlock > .textBlock {
         order: 1;
         text-align: center;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .section3 > .leftBlock > .textBlock > .CarouselTextBlock > h2 {
@@ -250,6 +254,6 @@
         white-space: normal;
     }
     .section3 > .leftBlock > .controls {
-        margin: 52px auto 50px;
+        margin: 40px auto 38px;
     }
 }

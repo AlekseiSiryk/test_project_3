@@ -13,14 +13,17 @@ const Radio = () => {
 };
 const Section3 = () => {
   let [activePoint, setPoint] = useState(1);
+  window.lastActivePoint = window.lastActivePoint === 'undefined' ? 1 : window.lastActivePoint;
   activePoint = activePoint > 3 ? 3 : activePoint;
   activePoint = activePoint < 1 ? 1 : activePoint;
+  const reverseAnimation = activePoint >= window.lastActivePoint ? "Forward" : "Reverse";
+  window.lastActivePoint = activePoint;
   return (
       <section className="section3">
         <div className="leftBlock">
           <div className="textBlock">
             <div className={'CarouselTextBlock' +
-            (activePoint === 1 ? ' active' : '')}>
+            (activePoint === 1 ? ' active' : ' back') + reverseAnimation}>
               <h2>All your orders in one place</h2>
               <p>
                 Say no more to chunky emails and messy WhatsApp messages.
@@ -28,14 +31,14 @@ const Section3 = () => {
               </p>
             </div>
             <div className={'CarouselTextBlock' +
-            (activePoint === 2 ? ' active' : '')}>
+            (activePoint === 2 ? ' active' : ' back') + reverseAnimation}>
               <h2>Some title 2</h2>
               <p>
                 Some Text 2
               </p>
             </div>
             <div className={'CarouselTextBlock' +
-            (activePoint === 3 ? ' active' : '')}>
+            (activePoint === 3 ? ' active' : ' back') + reverseAnimation}>
               <h2>Some title 3</h2>
               <p>
                 Some text 3
@@ -66,13 +69,13 @@ const Section3 = () => {
                     onClick={() => setPoint(activePoint + 1)}></button>
           </div>
         </div>
-        <div className="imgBlock">
-          <img className={'CarouselImg' + (activePoint === 1 ? ' active' : '')}
-               src={orders} alt="analytics"/>
-          <img className={'CarouselImg' + (activePoint === 2 ? ' active' : '')}
-               src={operationalCosts} alt="operational costs"/>
-          <img className={'CarouselImg' + (activePoint === 3 ? ' active' : '')}
-               src={analytics} alt="orders"/>
+        <div className={'imgBlock'}>
+          <div className={'imgWrapper' + (activePoint === 1 ? ' active' : ' back') + reverseAnimation}>
+               <img src={orders} alt="analytics"/></div>
+          <div className={'imgWrapper' + (activePoint === 2 ? ' active' : ' back') + reverseAnimation}>
+          <img src={operationalCosts} alt="operational costs"/></div>
+          <div className={'imgWrapper' + (activePoint === 3 ? ' active' : ' back') + reverseAnimation}>
+            <img src={analytics} alt="orders"/></div>
         </div>
       </section>
   );

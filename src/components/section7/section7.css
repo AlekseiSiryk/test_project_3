@@ -1,11 +1,12 @@
 .section7 {
     text-align: left;
     display: flex;
+    height: 816px;
 }
 
 .section7 > .iceBlueTwo {
-    background: linear-gradient(to bottom, white, #f7f9fa);
-    height: 850px;
+    background-image: linear-gradient(to top, #fafafc, rgba(255, 255, 255, 0.45));
+    height: 816px;
     left: 0;
 }
 
@@ -22,6 +23,7 @@
     background-position: -120px 135px;*/
     padding-bottom: 91px;
     position: relative;
+    margin-left: auto;
 }
 .section7 > .leftBlock > .noise {
     position: absolute;
@@ -58,7 +60,7 @@
     justify-content: flex-start;
     width: 134px;
     height: 43px;
-    background-image: url("arrow2.jpg");
+    background-image: url("arrow2.png");
     background-repeat: no-repeat;
     background-position: right;
     margin: 0 0 26px 22px;
@@ -108,6 +110,7 @@
 .section7 > .rightBlock {
     padding-top: 145px;
     width: 556px;
+    margin-right: auto;
 }
 
 .section7 .arrow1 {
@@ -115,7 +118,7 @@
     justify-content: flex-end;
     width: 257px;
     height: 52px;
-    background-image: url("arrow1.jpg");
+    background-image: url("arrow1.png");
     background-repeat: no-repeat;
     margin-bottom: 35px;
     margin-left: 30px;
@@ -161,10 +164,7 @@
     box-sizing: border-box;
     margin-bottom: 32px;
 }
-.section7 > .rightBlock > form > input:not([type=submit]):active, .section7 > .rightBlock > form > input:not([type=submit]):focus {
-    outline: none;
-    box-shadow: none;
-}
+
 
 .section7 > .rightBlock > form > input::placeholder {
     color: #b4babf;
@@ -207,12 +207,16 @@
 }
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
+    .section7{
+        height: 915px;
+    }
     .section7 > .leftBlock {
         width: 573px;
         background-position: -100px 160px;
         background-size: 123% auto;
         padding-bottom: 186px;
+        padding-top: 246px;
     }
     .section7 > .iceBlueTwo {
         height: 950px;
@@ -238,7 +242,7 @@
     }
 
     .section7 > .rightBlock {
-        padding-top: 145px;
+        padding-top: 167px;
         width: 407px;
     }
 
@@ -248,15 +252,16 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .section7 {
+        height: 1187px;
 /*        background-image: url("noise.png");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: -160px -60px;*/
         flex-direction: column;
         align-items: center;
-        padding-top: 207px;
+        padding-top: 105px;
     }
 
     .section7 > .iceBlueTwo {
@@ -265,6 +270,7 @@
 
     .section7 > .leftBlock {
         padding-top: 0;
+        margin-top: auto;
         padding-bottom: 81px;
         order: 1;
         width: 100%;
@@ -278,9 +284,10 @@
     }
 
     .section7 > .leftBlock > .arrow2 {
-        margin-left: 320px;
+        margin-left: auto;
         margin-right: auto;
         margin-top: 1px;
+        transform: translateX(10px);
     }
 
     .section7 > .leftBlock > .countries {
@@ -309,6 +316,7 @@
         color: #f43939;
         text-transform: uppercase;
         margin: 0 0 18px;
+        white-space: nowrap;
     }
 
     .section7 > .leftBlock > h1, .section7 > .leftBlock > h3 {
@@ -326,14 +334,16 @@
     }
 
     .section7 > .rightBlock > .arrow1 {
-        margin: 0 auto 46.5px 223px;
+        margin: 0 auto 46.5px;
+        transform: translateX(-25px);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .section7 {
         background-image: none;
-        padding-top: 150px;
+        padding-top: 68px;
+        height: 1207px;
     }
 
     .section7 > .iceBlueTwo {
@@ -352,7 +362,8 @@
     }
 
     .section7 > .rightBlock > .arrow1 {
-        margin: 0 24px 38px auto;
+        margin: 0 auto 38px;
+        transform: translateX(14px);
     }
 
     .section7 > .rightBlock > form {
@@ -400,7 +411,8 @@
     }
 
     .section7 > .leftBlock > .arrow2 {
-        margin: 0 auto 25px 48px;
+        margin: 0 auto 25px;
+        transform: translateX(-60px);
     }
 }
 
