@@ -5,10 +5,10 @@ import noise from './noise.png';
 
 const Country = ({ct, country}) => {
   return (
-      <div className="country">
+      <a className="country">
         <div className={'flag flag-' + ct}></div>
         {country}
-      </div>
+      </a>
   );
 };
 const Section7 = () => {

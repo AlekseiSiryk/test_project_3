@@ -38,12 +38,12 @@ input[type=tel], input[type=text], input[type=tel]:focus, input[type=text]:focus
     -webkit-appearance: none;
 }
 
-a:visited, a {
-    color: #21272e;
+input[type=button], input[type=submit], button, a{
+    cursor: pointer;
 }
 
-#pos.visible {
-    display: initial;
+a:visited, a {
+    color: #21272e;
 }
 
 .iceBlueTwo {
@@ -55,14 +55,18 @@ a:visited, a {
     z-index: -2;
 }
 
-
+html, body, #root{
+    width: 100%;
+    overflow-x: hidden;
+}
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow: hidden;
     color: #21272e;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .navBar {
@@ -88,11 +92,15 @@ a:visited, a {
     display: flex;
     align-items: center;
     height: 48px;
-    margin: 48px auto 23px;
+    margin: 51px auto 20px;
 }
 
 .App-footer > .navBar > a {
     color: white;
+}
+
+.App-footer > .navBar > a.string {
+    margin-bottom: 10px;
 }
 
 .App-footer > .navBar > a:first-child {
@@ -102,6 +110,30 @@ a:visited, a {
 
 .App-footer > .navBar > a.footer-blog {
     display: none;
+}
+
+.App-footer > .navBar > a.footer-home{
+    width: 35px;
+}
+
+.App-footer > .navBar > a.footer-supplier{
+    width: 50px;
+}
+
+.App-footer > .navBar > a.footer-about{
+    width: 37px;
+}
+
+.App-footer > .navBar > a.footer-contact{
+    width: 50px;
+}
+
+.App-footer > .navBar > a.footer-faq{
+    width: 25px;
+}
+
+.App-footer > .navBar > a.footer-legal{
+    width: 33px;
 }
 
 .App-footer > .navBar > .separator {
@@ -134,10 +166,10 @@ a:visited, a {
     max-width: 1280px;
     height: 15px;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.25);
     margin: 0 auto;
     line-height: 15px;
-    padding-left: 76px;
+    padding-left: 80px;
     box-sizing: border-box;
 }

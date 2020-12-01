@@ -91,7 +91,7 @@
 
 @media (max-width: 1279px) {
     .section6 > .row {
-        padding: 0 30px;
+        padding: 0 14px;
     }
 }
 
@@ -154,7 +154,7 @@
     }
 
     .section6 > .row > div:nth-of-type(3) p {
-        width: 331px;
+        width: auto;
     }
 }
 
@@ -169,7 +169,8 @@
         font-size: 28px;
         font-weight: bold;
         color: #21272e;
-        margin: 0 0 61px;
+        margin: 0 auto 61px;
+        width: 300px;
     }
 
     .section6 > .row > div p {

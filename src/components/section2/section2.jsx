@@ -5,7 +5,7 @@ import jolliebean from './logo/Jolliebean.png';
 import bens from './logo/Bens.png';
 import simplyWrapps from './logo/SimplyWrapps.jpg';
 import italian from './logo/Italian.jpg';
-import homepageWithShadow from './Home page_with shadow.png';
+import homepageWithShadow from './desktop.png';
 
 const Section2 = () => {
   return (

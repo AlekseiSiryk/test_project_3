@@ -1,17 +1,17 @@
 .section2 {
-    margin-top: -171px;
-    margin-bottom: 89px;
+    margin-top: -180px;
+    margin-bottom: 97px;
 }
 
 .section2 > .homepageImg {
-    width: auto;
-    height: 605px;
-    margin-bottom: 61px;
+    width: 1054px;
+    height: auto;
+    margin-bottom: 57px;
 }
 
 
 .section2 > h2 {
-    margin: 0 0 51px;
+    margin: 0 0 42px;
     font-size: 32px;
     line-height: 44px;
     font-weight: bold;
@@ -32,39 +32,47 @@
     .section2 > .logoBar {
         padding: 0 calc((100vw - 914px) / 2.5);
     }
+    .section2 > .homepageImg {
+        margin-left: -16px;
+    }
 }
 
 @media (max-width: 1023px) {
+
+    .section2{
+        margin-top: -178px;
+        margin-bottom: 94px;
+    }
+
     .section2 > h2 {
-        margin-bottom: 52px;
+        margin-bottom: 43px;
     }
 
     .section2 > .homepageImg {
-        height: 423px;
-        margin-bottom: 67px;
+        width: 96%;
+        min-width: 738px;
+        margin-bottom: 65px;
+        margin-left: 4px;
     }
 
     .section2 > .logoBar {
         height: 117px;
-        padding: 0 24px;
+        padding: 0 calc((100vw - 708px) / 2.5);
     }
 
     .section2 > .logoBar > img {
         width: 124px;
     }
-
-    .section2 {
-        margin-bottom: 85px;
-    }
 }
 
 @media (max-width: 767px) {
     .section2 {
-        margin-top: -73px;
+        margin-top: -86px;
         margin-bottom: 44px;
     }
     .section2 > .homepageImg {
-        margin-bottom: 44px;
+        margin-left: 18px;
+        margin-bottom: 41px;
     }
     .section2 > h2 {
         margin: 0 auto 33px;

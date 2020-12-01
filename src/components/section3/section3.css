@@ -15,7 +15,7 @@
     position: relative;
     overflow: hidden;
     min-height: 232px;
-    margin: 143px 75px 0 77px;
+    margin: 144px 75px 50px 77px;
     padding: 0;
     text-align: left;
 }
@@ -61,7 +61,7 @@
     border-radius: 50px;
     height: 100%;
     position: absolute;
-    padding-top: 46px;
+    padding-top: 43px;
     opacity: 0;
     transition: 0.2s;
 }
@@ -72,7 +72,7 @@
 
 .section3 > .imgBlock img {
     height: 100%;
-    margin-left: -46px;
+    margin-left: -55px;
 
 }
 .section3 > .imgBlock > .imgWrapper:nth-of-type(3) > img {
@@ -118,7 +118,7 @@
 .section3 > .leftBlock > .controls {
     display: flex;
     align-items: center;
-    margin-left: 84px;
+    margin-left: 78px;
 }
 
 .section3 > .leftBlock > .controls label {
@@ -213,7 +213,7 @@
     .section3 > .leftBlock > .controls {
         margin-top: 68px;
         margin-right: auto;
-        margin-left: auto;
+        margin-left: 95px;
     }
 }
 
@@ -221,12 +221,26 @@
     .section3 {
         flex-direction: column;
         height: 801px;
+        justify-content: flex-start;
     }
 
     .section3 > .imgBlock {
         height: 394px;
         width: 100%;
         margin: 0;
+    }
+
+    .section3 > .imgBlock > .imgWrapper:nth-of-type(3) {
+        padding-left: 52px;
+    }
+
+    .section3 > .imgBlock img {
+        height: 93%;
+        margin-left: -20px;
+
+    }
+    .section3 > .imgBlock > .imgWrapper:nth-of-type(3) > img {
+        height: calc(93% - 46px);
     }
 
     .section3 > .leftBlock {
@@ -237,6 +251,7 @@
         order: 1;
         text-align: center;
         margin: 0 auto;
+        width: 100%;
     }
 
     .section3 > .leftBlock > .textBlock > .CarouselTextBlock > h2 {

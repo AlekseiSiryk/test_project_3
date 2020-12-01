@@ -21,7 +21,6 @@ const Section4 = () => {
           <Lottie className="img" options={options}/>);
   return (
       <section className="section4">
-        <div className="iceBlueTwo"></div>
         <div className="imgBlock">
           <Img/>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import './App_low.css';
+import './lines.css';
 import logoWhite from './img/logo-white.svg';
 import inst from './img/icon-24-social-inst.svg';
 import link from './img/icon-24-social-linkedin.svg';
@@ -24,7 +25,18 @@ setTimeout(()=>{
 function App() {
   return (
       <div className="App">
-        <div className="iceBlueTwo"></div>
+          <div className="iceBlueTwo"></div>
+          <div className="lines lines1"></div>
+          <div className="lines lines2"></div>
+          <div className="lines lines3"></div>
+          <div className="lines lines3 lines3-1"></div>
+          <div className="lines lines3 lines3-2"></div>
+          <div className="lines lines3 lines3-3"></div>
+          <div className="lines lines3 lines3-4"></div>
+          <div className="lines lines3 lines3-5"></div>
+          <div className="lines lines3 lines3-6"></div>
+          <div className="lines lines3 lines3-7"></div>
+          <div className="lines lines4"></div>
         <Header/>
         <main className="App-main">
           <Section1/>
@@ -39,13 +51,13 @@ function App() {
           <nav className="navBar">
             <a href="#"><img src={logoWhite} alt="logo"/></a>
             <div className="separator"></div>
-            <a href="#" className="footer-home">Home</a>
-            <a href="#" className="footer-supplier">Supplier</a>
-            <a href="#" className="footer-about">About</a>
-            <a href="#" className="footer-contact">Contact</a>
-            <a href="#" className="footer-faq">FAQ</a>
-            <a href="#" className="footer-blog">Blog</a>
-            <a href="#" className="footer-legal">Legal</a><div className="breaker" />
+            <a href="#" className="footer-home string">Home</a>
+            <a href="#" className="footer-supplier string">Supplier</a>
+            <a href="#" className="footer-about string">About</a>
+            <a href="#" className="footer-contact string">Contact</a>
+            <a href="#" className="footer-faq string">FAQ</a>
+            <a href="#" className="footer-blog string">Blog</a>
+            <a href="#" className="footer-legal string">Legal</a><div className="breaker" />
             <div className="separator"></div>
             <a href="#" className="inst"><img src={inst} alt="Instagram"/></a>
             <a href="#" className="link"><img src={link} alt="Linkedin"/></a>

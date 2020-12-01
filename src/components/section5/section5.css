@@ -19,7 +19,7 @@
 }
 
 .section5 > .textBlock > span {
-    margin: 13px 0 78px 0;
+    margin: 15px 0 76px 0;
     height: 90px;
     font-size: 18px;
     font-weight: 600;
@@ -52,22 +52,22 @@
 .section5 > .imgBlock > div:nth-of-type(1) > img {
     width: 308px;
     height: 495px;
-    top: 37px;
-    left: -42px;
+    top: 39px;
+    left: -38px;
 }
 
 .section5 > .imgBlock > div:nth-of-type(2) > img {
     width: 309px;
     height: 497px;
-    top: 36px;
-    left: -38px;
+    top: 39px;
+    left: -37px;
 }
 
 .section5 > .imgBlock > div:nth-of-type(3) > img {
     width: 309px;
     height: 497px;
-    top: 36px;
-    left: -35px;
+    top: 39px;
+    left: -39px;
 }
 
 .section5 > .imgBlock > div:nth-of-type(2) {
@@ -79,7 +79,7 @@
 }
 
 .section5 > .imgBlock > div > span {
-    margin: auto auto 31px;
+    margin: auto auto 29px;
     opacity: 0.4;
     font-size: 14px;
     font-weight: 600;
@@ -91,6 +91,10 @@
 
 }
 
+.section5 > .imgBlock > div:nth-of-type(1) > span {
+    transform: translate(-3px, 1px);
+}
+
 .section5 > .imgBlock > div:nth-of-type(2) > span {
     line-height: 2.14;
     margin-bottom: 26px;
@@ -100,6 +104,7 @@
     line-height: 2.14;
     margin-bottom: 26px;
     background-image: url("checkmark.svg");
+    transform: translate(-3px, 1px);
 }
 
 
@@ -125,27 +130,39 @@
     .section5 > .imgBlock > div:nth-of-type(1) > img {
         width: 248px;
         height: 401px;
-        top: 32px;
-        left: -27px;
+        top: 33px;
+        left: -25px;
     }
 
     .section5 > .imgBlock > div:nth-of-type(2) > img {
         width: 249px;
         height: 402px;
-        top: 31px;
-        left: -31px;
+        top: 33px;
+        left: -29px;
     }
 
     .section5 > .imgBlock > div:nth-of-type(3) > img {
         width: 249px;
         height: 402px;
-        top: 31px;
-        left: -30px;
+        top: 32px;
+        left: -28px;
     }
 
     .section5 > .imgBlock > div > span {
         margin: auto auto 24px;
         line-height: 2.14;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) > span {
+        transform: translate(-6px, -1px);
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) > span {
+        transform: translate(-5px, 2px);
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > span {
+        transform: translate(-4px, 1px);
     }
 
     .section5 > .imgBlock > div:nth-of-type(2) {
@@ -155,6 +172,7 @@
     .section5 > .imgBlock > div:nth-of-type(3) {
         margin-left: 46px;
     }
+
 }
 
 @media (max-width: 1023px) {
@@ -189,6 +207,7 @@
         border-radius: 67.6px;
         background-color: #e1eff0;
         margin: 0 0 96px;
+        transform: translateX(5px);
         position: relative;
     }
     .section5 > .imgBlock > div:nth-of-type(1), .section5 > .imgBlock > div:nth-of-type(2), .section5 > .imgBlock > div:nth-of-type(3) {
@@ -198,22 +217,22 @@
     .section5 > .imgBlock > div:nth-of-type(1) > img {
         width: 398px;
         height: 643px;
-        top: 48px;
-        left: -48px;
+        top: 51px;
+        left: -49px;
     }
 
     .section5 > .imgBlock > div:nth-of-type(2) > img {
         width: 400px;
         height: 646px;
-        top: 47px;
-        left: -58px;
+        top: 49px;
+        left: -47px;
     }
 
     .section5 > .imgBlock > div:nth-of-type(3) > img {
         width: 400px;
         height: 646px;
-        top: 47px;
-        left: -62px;
+        top: 48px;
+        left: -52px;
     }
 
     .section5 > .imgBlock > div:not(:nth-of-type(3)) > span {
@@ -227,6 +246,18 @@
         padding-left: 0;
         padding-bottom: 18px;
         background-position: center bottom;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) > span {
+        transform: translate(-2px, 0px);
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) > span {
+        transform: translate(4px, 13px);
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > span {
+        transform: translate(-2px, 13px);
     }
 }
 
@@ -265,22 +296,22 @@
     .section5 > .imgBlock > div:nth-of-type(1) > img {
         width: 249px;
         height: 402px;
-        top: 31px;
-        left: -26px;
+        top: 33px;
+        left: -34px;
     }
 
     .section5 > .imgBlock > div:nth-of-type(2) > img {
         width: 249px;
         height: 402px;
-        top: 31px;
-        left: -29px;
+        top: 33px;
+        left: -34px;
     }
 
     .section5 > .imgBlock > div:nth-of-type(3) > img {
         width: 248px;
         height: 401px;
-        top: 32px;
-        left: -25px;
+        top: 34px;
+        left: -30px;
     }
 
     .section5 > .imgBlock > div > span {
@@ -293,5 +324,17 @@
 
     .section5 > .imgBlock > div:nth-of-type(3) > span {
         margin-bottom: 7px;
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(1) > span {
+        transform: translate(-2px, 0px);
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(2) > span {
+        transform: translate(-4px, 0px);
+    }
+
+    .section5 > .imgBlock > div:nth-of-type(3) > span {
+        transform: translate(-4px, 0px);
     }
 }
