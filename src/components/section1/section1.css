@@ -33,7 +33,7 @@
 
 .section1 > button {
     width: 214px;
-    height: 52px;
+    min-height: 52px;
     border-radius: 8px;
     border: none;
     outline: none;
